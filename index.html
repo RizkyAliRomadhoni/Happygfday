@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Girlfriend Day</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bgMusic" loop>
+    <source src="lagu.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Halaman 1 -->
+  <div class="container fade" id="page1">
+    <h2 class="romantic-header">Masukkan Namamu, Sayang 💕</h2>
+    <input type="text" id="nameInput" class="input-pretty" placeholder="Nama kamu sayang..." />
+    <button onclick="checkName()">Lanjut</button>
+  </div>
+
+  <!-- Halaman 2 -->
+  <div class="container fade hidden" id="page2">
+    <h1 class="romantic-text">Happy Girlfriend Day Sayang 💖</h1>
+    <div id="heartsContainer"></div>
+    <button onclick="goToPage3()">Lanjut 💌</button>
+  </div>
+
+  <!-- Halaman 3 -->
+  <div class="container fade hidden" id="page3">
+    <div class="message-box">
+      <h2 class="romantic-text">Happy Girlfriend Day Sayangku 💗</h2>
+      <p class="love-message">
+wanita cantik, pinter, baik, lucu, seru, dan banyak lagi lainnya.
+
+Makasih selama ini selalu temenin aku yaa, makasih udah hadir di hidupku, makasih udah jadi warna baru di hidupku, makasih banyak makasih pokoknya buat kamuu.
+
+Maaf ya cowokmu ini masih banyak kurangnya, masih sering lupa-lupa banyak hal, masih sering bikin kamu kesel, badmood, marah, dll.
+
+Semoga semakin lama cowokmu ini bisa jadi makin baik buat kamu, every time i want to be the best for you.
+
+Temenin aku terus ya sayang, hidupku sebahagia dan semenyenangkan itu waktu bareng kamu. Sabar-sabar ya sama kelakuanku yang lupaan, sering rewel, sering bikin kesel dll.
+
+Selamat berbahagia, bahagia terus ya sayang, senyummu, ketawamu, bahagiamu, adalah semangat dan pengobat lelahku.
+
+Pokoknya aku sayang banget sama kamu, sayang bangettttt puolll 💘
+      </p>
+    </div>
+    <button onclick="goToPage4()">Lanjut ke Menu 🎁</button>
+  </div>
+
+  <!-- Halaman 4 -->
+  <div class="container fade hidden" id="page4">
+    <h2 class="romantic-text">Menu Spesial Untukmu 💖</h2>
+    <div class="menu-buttons">
+      <button onclick="goToPage5()">Our Memory 🌹</button>
+      <button onclick="goToPage6()">Beauty 💗</button>
+      <button onclick="goToPage7()">Last Page 💌</button>
+    </div>
+  </div>
+
+  <!-- Halaman 5 -->
+  <div class="container fade hidden" id="page5">
+    <h2 class="romantic-text">Our Beautiful Memories 📸</h2>
+    <div class="gallery">
+      <img src="images/foto1.jpg" alt="Memory 1">
+      <img src="images/foto2.jpg" alt="Memory 2">
+      <img src="images/foto3.jpg" alt="Memory 3">
+      <img src="images/foto4.jpg" alt="Memory 4">
+      <img src="images/foto5.jpg" alt="Memory 5">
+      <img src="images/foto6.jpg" alt="Memory 6">
+      <img src="images/foto7.jpg" alt="Memory 7">
+    </div>
+    <br>
+    <button onclick="goBackToPage4()">Kembali ke Menu</button>
+  </div>
+
+  <!-- Halaman 6 -->
+  <div class="container fade hidden" id="page6">
+    <h2 class="romantic-text">Cantiknya Akuuu 💖💖💖💖</h2>
+    <div class="gallery">
+      <img src="images/ayang1.jpg" alt="Cantik 1">
+      <img src="images/ayang2.jpg" alt="Cantik 2">
+      <img src="images/ayang3.jpg" alt="Cantik 3">
+      <img src="images/ayang4.jpg" alt="Cantik 4">
+      <img src="images/ayang5.jpg" alt="Cantik 5">
+      <img src="images/ayang6.jpg" alt="Cantik 6">
+      <img src="images/ayang7.jpg" alt="Cantik 7">
+      <img src="images/ayang8.jpg" alt="Cantik 8">
+      <img src="images/ayang9.jpg" alt="Cantik 9">
+    </div>
+    <br>
+    <button onclick="goBackToPage4()">Kembali ke Menu</button>
+  </div>
+    </div>
+
+
+  <div class="container fade hidden" id="page7">
+  <h1 id="endText">I LOVE YOU ENDLESSLY 💖</h1>
+        <h2 class="romantic-text">Terima Kasih Sudah Membuatku Bahagia 💖</h2>
+        <p class="love-message">Semoga kita selalu bahagia bersama. I love you so much, sayangku! 💕</p>
+        <button onclick="goToPage1()">Kembali ke Awal</button>
+    </div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
