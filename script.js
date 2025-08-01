@@ -1,5 +1,5 @@
 function checkName() {
-  const allowedNames = ["farida", "rida", "ida"];
+  const allowedNames = ["farida","faridah","ni'matul munfaridah", "ridah", "bocil", "rida", "ida"];
   const inputName = document.getElementById("nameInput").value.trim().toLowerCase();
 
   if (allowedNames.includes(inputName)) {
@@ -248,4 +248,5 @@ function goBackToPage6() {
     page6.classList.remove("hidden");
   }, 1000);
 }       
+
 
